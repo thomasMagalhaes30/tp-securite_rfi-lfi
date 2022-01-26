@@ -13,7 +13,6 @@ Tous les éléments que vous verrez dans ce TP ont été "patchés" dans les ver
 
  - Récupérer le dépôt
  - Vérifiez que vous avez php sur votre machine *(php est déjà présent à l'iut)*
- - Vérifiez que vous avez Node.js sur votre machine *(Node.js est déjà présent à l'iut)*
  - Lancer la commande qui suit à la racine de ce projet afin de démarrer un serveur php
    ``` php --php-ini php.ini -S localhost:3054 ```
   - Utilisez votre navigateur préféré et allez sur l’url.
