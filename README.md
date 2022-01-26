@@ -21,7 +21,9 @@ Tous les éléments que vous verrez dans ce TP ont été "patchés" dans les ver
 ### Les astuces
 Astuce regarder : Null Byte Injection
    
-### Exercice n°1 LFI
+## LFI
+   
+### Exercice n°1.1 LFI
 Cliquez sur "Exo 1 LFI"
 
 **Votre mission : ~~(si vous l'acceptez)~~**
@@ -30,7 +32,9 @@ Trouvez le moyen d'afficher dans la page le contenu du fichier "cible.txt" .
 Ce dernier est situé au même niveau dans l'arborescence que la page.
 Notez l'url saisie dans votre compte rendu.
 
-### Exercice n°2 LFI
+---
+
+### Exercice n°1.2 LFI
 Cliquez sur "Exo 2 LFI"
 
 **Votre mission :**
@@ -39,7 +43,9 @@ Trouvez le moyen d'afficher dans la page le contenu du fichier "cible.txt" .
 Ce dernier est situé au même niveau dans l'arborescence que la page. 
 Notez l'url saisie dans votre compte rendu.
 
-### Exercice n°3 LFI
+---
+
+### Exercice n°1.3 LFI
 Cliquez sur "Exo 2 LFI"
 
 **Votre mission :**
@@ -52,7 +58,9 @@ Notez l'url saisie dans votre compte rendu ainsi que le résultat.
 
 ---
 
-### Exercice n°1 RFI
+## RFI
+
+### Exercice n°2.1 RFI
 Cliquez sur "Exo 1 RFI"
 
 **Votre mission :**
@@ -60,7 +68,9 @@ Cliquez sur "Exo 1 RFI"
 Trouvez le moyen d'afficher le contenu d'un autre site dans votre page.
 Notez l'url saisie dans votre compte rendu.
 
-### Exercice n°2 RFI
+---
+
+### Exercice n°2.2 RFI
 Cliquez sur "Exo 2 RFI"
 
 **Votre mission :**
@@ -68,7 +78,9 @@ Cliquez sur "Exo 2 RFI"
 Trouvez le moyen d'afficher le contenu d'un autre site dans votre page.
 Notez l'url saisie dans votre compte rendu.
 
-### Exercice n°3 RFI
+---
+
+### Exercice n°2.3 RFI
 Cet exercice ce fait avec un autre binôme/collègue. Si vous n'en n'avez pas ou qu'il n'est pas à cet exercice, nous mettrons en place un serveur accessible par l'intranet.
 
 #### Mise en place pour le serveur :
@@ -81,7 +93,9 @@ Cet exercice ce fait avec un autre binôme/collègue. Si vous n'en n'avez pas ou
 2. Puisque vous connaissez sa faille, autant l'exploiter ~~(la faille du serveur)~~ en injectant de l'HTML ou du PHP de votre choix. Si vous n'avez vraiment pas d'idée, prenez ce [index.html](https://github.com/LINCnil/Guide-RGPD-du-developpeur/blob/main/index.html).
 ```pour obtenir le lien brut, cliquez sur le bouton 'raw'```
 
-### Exercice n°3 RFI suite
+---
+
+### Exercice n°2.3 RFI suite
 ```diff
 -Il maitenant temps de jouer !!!
 ```
@@ -137,7 +151,8 @@ file_put_contents($file, $text, FILE_APPEND | LOCK_EX);
 Notez l'url saisie dans votre compte rendu ainsi que les étapes pour l'obtenir.
 
 ---
-### Exercice n°1 SSTI
+
+### Exercice n°3.1 SSTI
 
 pour commencer vous devrez cloner le repot git : https://github.com/GoSecure/template-injection-workshop
 puis lancer votre machine VDN et créez une passerelle sshfs jusqu'au dossier `template-injection-workshop/12_template_twig_php/`. 
