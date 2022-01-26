@@ -62,7 +62,7 @@ Trouvez le moyen d'afficher le contenu d'un autre site dans votre page.
 Notez l'url saisie dans votre compte rendu.
 
 ### Exercice n°3 RFI
-Cet exercice ce fait avec un autre binôme/collègue. Si vous n'en n'avez pas ou qu'il n'est pas à cet exercice, nous mettrons en place propre serveur.
+Cet exercice ce fait avec un autre binôme/collègue. Si vous n'en n'avez pas ou qu'il n'est pas à cet exercice, nous mettrons en place un serveur accessible par l'intranet.
 
 #### Mise en place pour le serveur :
 1. Trouvez l'adresse IPv4 de votre machine (pour l'avoir en mémoire)
