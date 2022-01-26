@@ -140,7 +140,18 @@ Notez l'url saisie dans votre compte rendu ainsi que les étapes pour l'obtenir.
 ### Exercice n°1 SSTI
 
 pour commencer vous devrez cloner le repot git : https://github.com/GoSecure/template-injection-workshop
-une fois cela fait un docker-compose up 
+puis lancer votre machine VDN et créez une passerelle sshfs jusqu'au dossier `template-injection-workshop/12_template_twig_php/`. 
+Ensuite vous lancerez un docker dans le fichier `12_template_twig_php` et vous vous y connecterez via le port `8012` de local host (127.0.0.1):
+```bash
+$ vdn docker-tmp
+
+vdn:...$ sshfs {login}@{ip_machine}:/home/etud/{login}/{path to template-injection-workshop/12_template_twig_php/}
+vdn:.../12_template_twig_php$ docker-compose up
+
+vdn:...$ links http://localhost:8012/
+ ### ou ###
+vdn:...$ links 127.0.0.1:8012/
+```
 ensuite lancer Vdn et enfin faite un links 127.0.0.1:8012
 une fois cela fait votre mission consite à récupérer le flag en utilisant une template injection.
 
