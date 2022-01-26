@@ -10,11 +10,16 @@
 
 $input = $_GET['file']??'normal';
 
-/*if (!isset($input) || !file_exists($input)) {
-    echo "Erreur<br/>";
-    echo "Le Fichier <i>".$input."<i/> n'existe pas";
-    return;
-}*/
+$real_input = "";
+foreach (str_split($input) as $char) {
+    if (ord($char)==0 ){
+        include $real_input;
+        return;
+    }
+
+    $real_input.=$char;
+    //echo $char."<br/>";
+}
 
 include $input.'.html'; 
 

@@ -15,11 +15,9 @@
         </ul>
         <h3 class="rfi-color">Les exos RFI</h3>
         <ul>
-            <li><a href="exo_rfi/">Exo 1 RFI</a></li>
-            <li><a href="exo_rfi_2/">Exo 2 RFI</a></li>
+            <li><a href="exo_rfi/?file=normal.html">Exo 1 RFI</a></li>
+            <li><a href="exo_rfi_2/?file=normal">Exo 2 RFI</a></li>
         </ul>
     </div>
 </body>
 </html>
-
-
