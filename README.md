@@ -1,12 +1,12 @@
 # TP - Sécurité LFI, RFI et Template Injection
 - **Auteur :** DESBOUYS Maxence, MAGALHAES Thomas, THEUWS Gabriel et VALENTIN Guillaume
 - **Année :** 2021 -2022
-- **Date de rendu :** 2 février 2022 (1 semaine)
+- **Date de rendu :** 2 février 2022 (1 semaine pour le faire)
 - **Adresse mail du compte rendu :** thomas.magalhaes@etu.uca.fr
 - **Le rendu :** un document .txt ou .pdf répondant aux questions
 
 # Disclaimer
-Tous les éléments que vous verrez dans ce TP ont été patchés dans les versions les plus récentes. De plus, vous êtes seul responsable de l’usage que vous pourriez faire de ces techniques sur des sites tiers, elles vous sont présentées ici à des fins éducatives.
+Tous les éléments que vous verrez dans ce TP ont été "patchés" dans les versions les plus récentes. De plus, vous êtes seul responsable de l’usage que vous pourriez faire de ces techniques sur des sites tiers, elles vous sont présentées ici à des fins éducatives.
 
 # Le tp
 ### Mise en place :
@@ -16,7 +16,7 @@ Tous les éléments que vous verrez dans ce TP ont été patchés dans les versi
  - Vérifiez que vous avez Node.js sur votre machine *(Node.js est déjà présent à l'iut)*
  - Lancer la commande qui suit à la racine de ce projet afin de démarrer un serveur php
    ``` php --php-ini php.ini -S localhost:3054 ```
-  - Utilisez votre navigateur préféré et allez sur l’url ci-dessous.
+  - Utilisez votre navigateur préféré et allez sur l’url.
   [http://localhost:3054/](http://localhost:3054/)
 
 ### Les astuces
@@ -25,7 +25,7 @@ Astuce regarder : Null Byte Injection
 ### Exercice n°1 LFI
 Cliquez sur "Exo 1 LFI"
 
-**Votre mission : ~~(si si vous l'acceptez)~~**
+**Votre mission : ~~(si vous l'acceptez)~~**
 
 Trouvez le moyen d'afficher dans la page le contenu du fichier "cible.txt" .
 Ce dernier est situé au même niveau dans l'arborescence que la page.
@@ -135,7 +135,7 @@ file_put_contents($file, $text, FILE_APPEND | LOCK_EX);
 //echo "lancement de l'attaque";
 ?>
 ```
-Notez l'url saisie dans votre compte rendu.
+Notez l'url saisie dans votre compte rendu ainsi que les étapes pour l'obtenir.
 
 
 
