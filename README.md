@@ -112,7 +112,7 @@ Termine l'url
 Pour trouver la correspondance en base 64 de votre code php
 [https://www.base64url.com/](https://www.base64url.com/)
 
-(Il faut retirer les caractères "+","-" et "=" si il y en a la fin)
+(Il faut retirer les caractères "+","-" et "=" si il y en a à la fin)
 
 ```
 input: <?php echo "bonjour"; ?>
