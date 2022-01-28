@@ -97,7 +97,7 @@ Cet exercice ce fait avec un autre binôme/collègue. Si vous n'en n'avez pas ou
 
 ### Exercice n°2.3 RFI suite
 ```diff
--Il maitenant temps de jouer !!!
+-Il est maitenant temps de jouer !!!
 ```
 
 Mais avant des explications qui vont seront utiles pour votre périple.
