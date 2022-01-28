@@ -100,7 +100,7 @@ Cet exercice ce fait avec un autre binôme/collègue. Si vous n'en n'avez pas ou
 -Il est maitenant temps de jouer !!!
 ```
 
-Mais avant des explications qui vont seront utiles pour votre périple.
+Mais avant des explications qui vous seront utiles dans votre périple.
 
 L'url suivant permet d'afficher le phpinfo() sur serveur ciblé.
 ```
