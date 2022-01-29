@@ -154,13 +154,12 @@ Notez l'url saisie dans votre compte rendu ainsi que les étapes pour l'obtenir.
 
 ### Exercice n°3.1 SSTI
 
-Pour commencer vous devrez cloner le repository git : https://github.com/GoSecure/template-injection-workshop
-puis lancer votre machine VDN et créer une passerelle sshfs jusqu'au dossier `template-injection-workshop/12_template_twig_php/`. 
-Ensuite vous lancerez un docker dans le fichier `12_template_twig_php` et vous vous y connecterez via le port `8012` de local host (127.0.0.1):
+Pour commencer vous devez lancer votre machine VDN nommé docker-tmp, puis dans celle-ci cloner le repository git : https://github.com/GoSecure/template-injection-workshop. 
+Ensuite vous lancerez un docker dans le fichier `template-injection-workshop/12_template_twig_php/` et vous vous y connecterez via le port `8012` de local host (127.0.0.1):
 ```bash
 $ vdn docker-tmp
-
-vdn:...$ sshfs {login}@{ip_machine}:/home/etud/{login}/{path to template-injection-workshop/12_template_twig_php/}
+vdn:...$ git clone https://github.com/GoSecure/template-injection-workshop
+vdn:...$ cd template-injection-workshop/12_template_twig_php/
 vdn:.../12_template_twig_php$ docker-compose up
 
 vdn:...$ links http://localhost:8012/
@@ -176,3 +175,5 @@ Une fois cela fait votre mission consite à récupérer le flag en utilisant une
 
 ### Aide
 La commande suivante vous sera utile dans votre recherche du flag: ``{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("echo -E `ls /`")}}``
+
+Regarder son résultat et sa structure pour en déduire les informations utiles.
