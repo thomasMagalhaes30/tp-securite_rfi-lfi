@@ -154,8 +154,8 @@ Notez l'url saisie dans votre compte rendu ainsi que les étapes pour l'obtenir.
 
 ### Exercice n°3.1 SSTI
 
-pour commencer vous devrez cloner le repot git : https://github.com/GoSecure/template-injection-workshop
-puis lancer votre machine VDN et créez une passerelle sshfs jusqu'au dossier `template-injection-workshop/12_template_twig_php/`. 
+Pour commencer vous devrez cloner le repository git : https://github.com/GoSecure/template-injection-workshop
+puis lancer votre machine VDN et créer une passerelle sshfs jusqu'au dossier `template-injection-workshop/12_template_twig_php/`. 
 Ensuite vous lancerez un docker dans le fichier `12_template_twig_php` et vous vous y connecterez via le port `8012` de local host (127.0.0.1):
 ```bash
 $ vdn docker-tmp
