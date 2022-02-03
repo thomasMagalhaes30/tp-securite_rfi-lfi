@@ -125,7 +125,7 @@ Termine l'url
 
 Pour trouver la correspondance en base 64 de votre code php voir le lien ci-dessous
 
-EDIT 1 (Il faut retirer les caractères "+","-" et "=" si il y en a à la fin)
+EDIT 1 (Il faut retirer les caractères "+","-" et "=" si il y en a à la fin) les underscore aussi, rajoutez des commentaires pour ne plus en avoir dans le base64
 
 EDIT 2 Prenez la base64 url encoding
 
