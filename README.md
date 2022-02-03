@@ -81,16 +81,15 @@ Notez l'url saisie dans votre compte rendu.
 ---
 
 ### Exercice n°2.3 RFI
-Cet exercice ce fait avec un autre binôme/collègue. Si vous n'en n'avez pas ou qu'il n'est pas à cet exercice, nous mettrons en place un serveur accessible par l'intranet.
+Cet exercice ce fait avec un autre binôme/collègue. Si vous n'en n'avez pas ou qu'il n'est pas à cet exercice, nous mettrons en place un serveur accessible par l'intranet. \[EDIT\] vous pouvez aussi vous attaquer vous même, dans ce cas votre serveur est toujours localhost.
 
 #### Mise en place pour le serveur :
-1. Trouvez l'adresse IPv4 de votre machine (pour l'avoir en mémoire)
 2. Créer un fichier index.php qui possède un titre h1 et une inclusion de fichier sans vérification de l’entrée. Vous pouvez faire comme [l'index.php de l'exercice 1](/exo_rfi/index.php).
-3. Lancer votre serveur PHP en précisant l'IPv4 de votre machine au lieu de localhost. Ansi, votre serveur est mis à la disposition de tout l'IUT.
+3. Lancer votre serveur PHP en précisant l'IPv4 ou localhost au choix.
 
 #### Protocole à suivre pour le client :
-1. Avec votre navigateur préféré, obtenir la page d'accueil du binôme/collègue avec lequel vous travaillez.
-2. Puisque vous connaissez sa faille, autant l'exploiter ~~(la faille du serveur)~~ en injectant de l'HTML ou du PHP de votre choix. Si vous n'avez vraiment pas d'idée, prenez ce [index.html](https://github.com/LINCnil/Guide-RGPD-du-developpeur/blob/main/index.html).
+1. Avec votre navigateur préféré, obtenir la page d'accueil.
+2. Puisque vous connaissez la faille, en injectant de l'HTML ou du PHP de votre choix. Si vous n'avez vraiment pas d'idée, prenez ce [index.html](https://github.com/LINCnil/Guide-RGPD-du-developpeur/blob/main/index.html).
 ```pour obtenir le lien brut, cliquez sur le bouton 'raw'```
 
 ---
@@ -120,12 +119,18 @@ Correspond ici a ```<?php phpinfo();?>```  en base 64
 
 >%2B
 
-Termine l'url 
+Termine l'url
 
-Pour trouver la correspondance en base 64 de votre code php
+---
+
+Pour trouver la correspondance en base 64 de votre code php voir le lien ci-dessous
+
+EDIT 1 (Il faut retirer les caractères "+","-" et "=" si il y en a à la fin)
+
+EDIT 2 Prenez la base64 url encoding
+
 [https://www.base64url.com/](https://www.base64url.com/)
 
-(Il faut retirer les caractères "+","-" et "=" si il y en a à la fin)
 
 ```
 input: <?php echo "bonjour"; ?>
@@ -142,10 +147,9 @@ Le script php qui suit vous permet d'ajouter en fin de fichier du texte.
 Utilisez le pour ajouter vos prénoms dans l'index du serveur ciblé. 
 ```php
 <?php
-$file = ''; 
-$text = "";
+$file = ''; // <--- le fichier ou sera ajoute le code
+$text = ""; // <--- le texte a ajouter
 file_put_contents($file, $text, FILE_APPEND | LOCK_EX);
-//echo "lancement de l'attaque";
 ?>
 ```
 Notez l'url saisie dans votre compte rendu ainsi que les étapes pour l'obtenir.
